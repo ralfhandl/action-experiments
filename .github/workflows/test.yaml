@@ -12,12 +12,7 @@ jobs:
 
     steps:
       - name: Show environment variables
-        run: |
-          echo ${PUSHER_EMAIL}
-          echo ${PR_USER_EMAIL}
-          # echo ${WORKFLOW_SENDER}
         env:
-          CI: true
           PUSHER_EMAIL: ${{ github.event.pusher.email }}
           PR_USER_EMAIL: ${{ github.event.pull_request.user.email }}
           # WORKFLOW_SENDER: ${{ github.event.sender }}
