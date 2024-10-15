@@ -18,4 +18,3 @@ jobs:
           PUSHER_EMAIL: ${{ github.event.pusher.email }}
           PR_USER_EMAIL: ${{ github.event.pull_request.user.email }}
           WORKFLOW_RUN: ${{ github.event.workflow_run.actor.email }}
-          WORKFLOW_JOB: ${{ github.event.sender }}
