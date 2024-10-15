@@ -16,5 +16,6 @@ jobs:
           echo Hi!
         env:
           PUSHER_EMAIL: ${{ github.event.pusher.email }}
-          PR_USER_EMAIL: ${{ github.event.pull_request.user.email }}
+          PR_ACTION: ${{ github.event.pull_request.action }}
+          PR_USER: ${{ github.event.pull_request.user.name }}
           WORKFLOW_RUN: ${{ github.event.workflow_run.actor.email }}
